@@ -22,21 +22,26 @@ PYTHON_VERSION=$(python3 --version)
 echo "✓ Found $PYTHON_VERSION"
 echo ""
 
-# Check if pip is installed
-if ! command -v pip3 &> /dev/null && ! command -v pip &> /dev/null; then
+# Determine which pip command to use
+PIP_CMD=""
+if command -v pip3 &> /dev/null; then
+    PIP_CMD="pip3"
+elif command -v pip &> /dev/null; then
+    PIP_CMD="pip"
+else
     echo "Error: pip is not installed."
     echo "Please install pip first."
     exit 1
 fi
 
-echo "✓ pip is available"
+echo "✓ pip is available ($PIP_CMD)"
 echo ""
 
 # Install the package in editable mode
 echo "Installing professional-agent package..."
 echo ""
 
-pip install -e . || pip3 install -e .
+$PIP_CMD install -e .
 
 echo ""
 echo "========================================"
