@@ -1,0 +1,3 @@
+# Cybersecurity Learning Assistant Requirements
+# No external dependencies required for basic functionality
+# Python 3.6+ standard library only

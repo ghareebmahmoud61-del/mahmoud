@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Learning Assistant / עוזר למידה לאבטחת מידע</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.8;
+            font-size: 18px; /* Larger font for dyslexia support */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            letter-spacing: 1px; /* Better spacing for dyslexia */
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .feature-card p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .topics-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+
+        .topics-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .topic {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .topic h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .topic ul {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+
+        .topic li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .cta-section p {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .dyslexia-friendly {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .dyslexia-friendly h3 {
+            color: #ff6f00;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .dyslexia-friendly ul {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+
+        .dyslexia-friendly li {
+            margin: 10px 0;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #d63384;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #666;
+        }
+
+        /* Better readability for dyslexia */
+        p, li {
+            word-spacing: 0.16em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Cybersecurity Learning Assistant</h1>
+        <div class="subtitle">עוזר למידה לאבטחת מידע</div>
+        <p style="text-align: center; font-size: 1.2em; color: #666; margin-bottom: 30px;">
+            A smart assistant designed to help you learn cybersecurity,<br>
+            with special support for people with dyslexia
+        </p>
+
+        <div class="dyslexia-friendly">
+            <h3>💡 Designed for Dyslexia Support / תמיכה בדיסלקציה</h3>
+            <ul>
+                <li>✅ <strong>Automatic note-taking</strong> - The assistant writes for you!</li>
+                <li>✅ <strong>Clear formatting</strong> - Easy to read and understand</li>
+                <li>✅ <strong>Simple language</strong> - No complicated jargon</li>
+                <li>✅ <strong>Visual organization</strong> - Structured information</li>
+                <li>✅ <strong>Multi-language support</strong> - Hebrew, Arabic, and English</li>
+            </ul>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>📚 Lesson Generation</h3>
+                <p>Generate comprehensive lessons on any cybersecurity topic. The assistant breaks down complex concepts into simple, easy-to-understand lessons.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📝 Smart Note-Taking</h3>
+                <p>The assistant writes notes FOR YOU! Just tell it what you learned, and it will organize and format your notes automatically.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📊 Summary Creation</h3>
+                <p>Create clear, concise summaries of your learning materials. Perfect for reviewing before tests!</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎥 YouTube Search</h3>
+                <p>Find educational videos in multiple languages (English, Hebrew, Arabic). The assistant searches YouTube for the best learning resources.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📈 Progress Tracking</h3>
+                <p>Monitor your learning journey. See how many lessons you've completed and notes you've taken.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>💾 Session Management</h3>
+                <p>Save and load your learning sessions. Continue where you left off anytime!</p>
+            </div>
+        </div>
+
+        <div class="topics-section">
+            <h2>📖 Learning Topics Available</h2>
+            
+            <div class="topic">
+                <h3>1. Information Security / אבטחת מידע</h3>
+                <ul>
+                    <li>CIA Triad (Confidentiality, Integrity, Availability)</li>
+                    <li>Authentication and Authorization</li>
+                    <li>Encryption Basics</li>
+                    <li>Access Control</li>
+                    <li>Security Policies</li>
+                </ul>
+            </div>
+
+            <div class="topic">
+                <h3>2. Network Security / אבטחת רשתות</h3>
+                <ul>
+                    <li>Firewalls</li>
+                    <li>VPN (Virtual Private Networks)</li>
+                    <li>IDS/IPS Systems</li>
+                    <li>Network Protocols Security</li>
+                    <li>Wireless Security</li>
+                </ul>
+            </div>
+
+            <div class="topic">
+                <h3>3. Cyber Threats / איומי סייבר</h3>
+                <ul>
+                    <li>Malware Types</li>
+                    <li>Phishing and Social Engineering</li>
+                    <li>DDoS Attacks</li>
+                    <li>Ransomware</li>
+                    <li>Zero-Day Vulnerabilities</li>
+                </ul>
+            </div>
+
+            <div class="topic">
+                <h3>4. Application Security / אבטחת יישומים</h3>
+                <ul>
+                    <li>OWASP Top 10</li>
+                    <li>SQL Injection</li>
+                    <li>Cross-Site Scripting (XSS)</li>
+                    <li>Secure Coding Practices</li>
+                    <li>API Security</li>
+                </ul>
+            </div>
+
+            <div class="topic">
+                <h3>5. Cryptography / קריפטוגרפיה</h3>
+                <ul>
+                    <li>Symmetric Encryption</li>
+                    <li>Asymmetric Encryption</li>
+                    <li>Hash Functions</li>
+                    <li>Digital Signatures</li>
+                    <li>PKI (Public Key Infrastructure)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>🚀 Get Started Now!</h2>
+            <p>Download and run the assistant to start learning cybersecurity</p>
+            <div style="margin: 20px 0;">
+                <p style="font-size: 1em; margin-bottom: 15px;">Run the interactive assistant:</p>
+                <code style="background: rgba(255,255,255,0.2); color: white; padding: 10px 20px; display: inline-block; border-radius: 5px;">
+                    python3 interactive_assistant.py
+                </code>
+            </div>
+            <div>
+                <p style="font-size: 1em; margin-bottom: 15px;">Or use as a Python module:</p>
+                <code style="background: rgba(255,255,255,0.2); color: white; padding: 10px 20px; display: inline-block; border-radius: 5px;">
+                    python3 cyber_learning_assistant.py
+                </code>
+            </div>
+        </div>
+
+        <div style="background: #e3f2fd; padding: 30px; border-radius: 15px; margin: 30px 0;">
+            <h3 style="color: #1976d2; margin-bottom: 15px; font-size: 1.5em;">📋 Quick Example</h3>
+            <pre style="background: #fff; padding: 20px; border-radius: 10px; overflow-x: auto; line-height: 1.6;"><code>from cyber_learning_assistant import CyberSecurityLearningAssistant
+
+# Create your assistant
+assistant = CyberSecurityLearningAssistant(user_name="Your Name")
+
+# Generate a lesson
+lesson = assistant.generate_lesson("information_security")
+print(lesson)
+
+# The assistant writes notes for you!
+note = assistant.write_for_me(
+    "Firewalls",
+    "Firewalls protect networks from unauthorized access"
+)
+print(note)
+
+# Search for YouTube videos
+videos = assistant.search_youtube_resources("cryptography")
+for video in videos[:3]:
+    print(f"Watch: {video['url']}")
+</code></pre>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ to help everyone learn cybersecurity</p>
+            <p>Especially designed for people with dyslexia</p>
+            <p style="margin-top: 10px;">© 2026 Cybersecurity Learning Assistant</p>
+        </div>
+    </div>
+</body>
+</html>
