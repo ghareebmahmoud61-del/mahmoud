@@ -173,8 +173,12 @@ def main():
     manager = INeed()
     
     if args.command == "add":
-        need = manager.add_need(args.description, args.priority)
-        print(f"Added need #{need['id']}: {need['description']} (priority: {need['priority']})")
+        try:
+            need = manager.add_need(args.description, args.priority)
+            print(f"Added need #{need['id']}: {need['description']} (priority: {need['priority']})")
+        except ValueError as e:
+            print(f"Error: {e}", file=sys.stderr)
+            sys.exit(1)
     
     elif args.command == "list":
         needs = manager.list_needs(show_completed=args.all)
