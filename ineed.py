@@ -58,9 +58,20 @@ class INeed:
             
         Returns:
             The created need dictionary
+            
+        Raises:
+            ValueError: If priority is not one of low, medium, high
         """
+        # Validate priority
+        valid_priorities = ["low", "medium", "high"]
+        if priority not in valid_priorities:
+            raise ValueError(f"Priority must be one of {valid_priorities}, got '{priority}'")
+        
+        # Calculate next ID based on max existing ID
+        next_id = max([need["id"] for need in self.needs], default=0) + 1
+        
         need = {
-            "id": len(self.needs) + 1,
+            "id": next_id,
             "description": description,
             "priority": priority,
             "completed": False,

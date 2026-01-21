@@ -99,6 +99,29 @@ class TestINeed(unittest.TestCase):
         """Test that default priority is medium"""
         need = self.manager.add_need("Test need")
         self.assertEqual(need["priority"], "medium")
+    
+    def test_invalid_priority(self):
+        """Test that invalid priority raises ValueError"""
+        with self.assertRaises(ValueError):
+            self.manager.add_need("Test need", priority="invalid")
+    
+    def test_id_generation_after_removal(self):
+        """Test that IDs are generated correctly after removing needs"""
+        # Add three needs
+        need1 = self.manager.add_need("Need 1")
+        need2 = self.manager.add_need("Need 2")
+        need3 = self.manager.add_need("Need 3")
+        
+        self.assertEqual(need1["id"], 1)
+        self.assertEqual(need2["id"], 2)
+        self.assertEqual(need3["id"], 3)
+        
+        # Remove the second need
+        self.manager.remove_need(2)
+        
+        # Add a new need - should get ID 4, not 3
+        need4 = self.manager.add_need("Need 4")
+        self.assertEqual(need4["id"], 4)
 
 
 if __name__ == "__main__":
