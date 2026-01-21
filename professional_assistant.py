@@ -19,6 +19,10 @@ class ProfessionalCyberSecurityAssistant:
     Professional-grade cybersecurity learning assistant with advanced features
     """
     
+    # Class constants
+    DEFAULT_HOURS_PER_WEEK = 20  # Default study hours per week
+    FULL_TIME_HOURS_PER_WEEK = 40  # Full-time study hours per week
+    
     def __init__(self, user_name: str = "Professional", skill_level: str = "beginner"):
         self.user_name = user_name
         self.skill_level = skill_level  # beginner, intermediate, advanced, expert
@@ -280,6 +284,7 @@ class ProfessionalCyberSecurityAssistant:
         topic_data = self.topics[topic]
         
         if module_index >= len(topic_data['modules']):
+            print(f"Warning: module_index {module_index} out of range, using module 0")
             module_index = 0
         
         module = topic_data['modules'][module_index]
@@ -532,12 +537,12 @@ class ProfessionalCyberSecurityAssistant:
         roadmap += f"{'='*70}\n"
         
         total_hours = sum(t['duration_hours'] for t in self.topics.values())
-        weeks = total_hours / 20  # Assuming 20 hours per week
+        weeks_part_time = total_hours / self.DEFAULT_HOURS_PER_WEEK
+        weeks_full_time = total_hours / self.FULL_TIME_HOURS_PER_WEEK
         
         roadmap += f"Total Learning Hours: {total_hours}\n"
-        roadmap += f"Estimated Timeline: {int(weeks)} weeks (20 hrs/week)\n"
-        roadmap += f"Full-time: {int(total_hours / 40)} weeks\n"
-        roadmap += f"Part-time: {int(weeks)} weeks\n"
+        roadmap += f"Part-time ({self.DEFAULT_HOURS_PER_WEEK} hrs/week): {int(weeks_part_time)} weeks\n"
+        roadmap += f"Full-time ({self.FULL_TIME_HOURS_PER_WEEK} hrs/week): {int(weeks_full_time)} weeks\n"
         
         roadmap += f"\n{'='*70}\n"
         
@@ -628,7 +633,7 @@ def main():
     
     # Create professional assistant
     assistant = ProfessionalCyberSecurityAssistant(
-        user_name="Professional Student",
+        user_name="Student",
         skill_level="intermediate"
     )
     

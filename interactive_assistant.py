@@ -6,7 +6,14 @@ Interactive Cybersecurity Learning Assistant CLI
 An interactive command-line interface for the learning assistant.
 """
 
-from cyber_learning_assistant import CyberSecurityLearningAssistant
+try:
+    from cyber_learning_assistant import CyberSecurityLearningAssistant
+except ImportError as e:
+    print("Error: Unable to import CyberSecurityLearningAssistant module.")
+    print(f"Details: {e}")
+    print("Please ensure cyber_learning_assistant.py is in the same directory.")
+    exit(1)
+
 import sys
 
 

@@ -292,7 +292,7 @@ def main():
     print("="*60 + "\n")
     
     # Create assistant
-    assistant = CyberSecurityLearningAssistant(user_name="Mahmoud")
+    assistant = CyberSecurityLearningAssistant(user_name="Student")
     
     print("Welcome! This assistant will help you learn cybersecurity.")
     print("It's designed to be helpful for people with dyslexia.\n")
