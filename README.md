@@ -13,7 +13,24 @@ A Python-based professional agent system that enables communication through an o
 
 ### Installation
 
-No external dependencies required. Uses Python 3 standard library only.
+#### Install from source
+
+```bash
+# Clone the repository
+git clone https://github.com/ghareebmahmoud61-del/mahmoud.git
+cd mahmoud
+
+# Install the package
+pip install -e .
+```
+
+#### Direct usage (without installation)
+
+You can also use the module directly without installation. Simply copy `professional_agent.py` to your project directory and import it.
+
+#### Requirements
+
+No external dependencies required. Uses Python 3.7+ standard library only.
 
 ### Usage
 
