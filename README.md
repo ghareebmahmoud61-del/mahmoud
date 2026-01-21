@@ -41,12 +41,6 @@ print(agent.listen("I have a question"))
 print(agent.close_mic())
 ```
 
-#### Running the Demo
-
-```bash
-python3 professional_agent.py
-```
-
 #### Running Tests
 
 ```bash
