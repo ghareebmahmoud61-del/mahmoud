@@ -13,6 +13,19 @@ A Python-based professional agent system that enables communication through an o
 
 ### Installation
 
+#### Quick Setup (Recommended)
+
+Run the automated setup script:
+
+```bash
+# Clone the repository
+git clone https://github.com/ghareebmahmoud61-del/mahmoud.git
+cd mahmoud
+
+# Run setup script
+./setup.sh
+```
+
 #### Install from source
 
 ```bash

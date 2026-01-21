@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include requirements.txt
+include setup.cfg
+include setup.sh
+recursive-include tests *.py
