@@ -32,14 +32,13 @@ The package uses standard Python setuptools for installation and distribution.
 
 ### Requirements
 
-- Python >= 3.6
+- Python >= 3.8
 - pip
 
 ### Configuration
 
 All package configuration is managed through:
 - `setup.py` - Main setup script
-- `setup.cfg` - Setup configuration
 - `requirements.txt` - Core dependencies
 - `requirements-dev.txt` - Development dependencies
 
@@ -75,7 +74,6 @@ mahmoud/
 ├── mahmoud/           # Main package directory
 │   └── __init__.py   # Package initialization
 ├── setup.py          # Setup script
-├── setup.cfg         # Setup configuration
 ├── requirements.txt  # Core dependencies
 ├── requirements-dev.txt  # Development dependencies
 ├── .gitignore        # Git ignore file

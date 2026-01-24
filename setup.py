@@ -12,7 +12,6 @@ setup(
     name="mahmoud",
     version="0.1.0",
     author="Mahmoud",
-    author_email="",
     description="A Python package by Mahmoud",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -20,10 +19,14 @@ setup(
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.8",
     install_requires=[
         # Add your dependencies here
     ],
