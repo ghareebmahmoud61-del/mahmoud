@@ -25,6 +25,7 @@ Perfect for users who:
 **Files:**
 - `cyber_learning_assistant.py` - Core assistant
 - `interactive_assistant.py` - Easy-to-use interactive interface
+- `mobile_assistant.py` - iPhone/iOS optimized interface 📱
 
 ---
 
@@ -108,7 +109,18 @@ Comprehensive documentation in Hebrew and English:
    - Templates for extensions
    - Best practices
 
-4. **index.html** - Visual documentation
+4. **IPHONE_GUIDE.md** - Complete iPhone/iOS guide 📱
+   - Full setup instructions
+   - App recommendations
+   - Mobile optimization tips
+   - Troubleshooting for iPhone
+
+5. **IPHONE_QUICKSTART.md** - 5-minute iPhone setup 📱
+   - Super fast setup guide
+   - Quick reference
+   - Essential tips
+
+6. **index.html** - Visual documentation
    - Beautiful web interface
    - Feature showcase
    - Quick examples
@@ -123,12 +135,15 @@ mahmoud/
 ├── USAGE_GUIDE.md                     # Detailed usage guide
 ├── EXTENDING.md                       # Extension guide
 ├── PROJECT_SUMMARY.md                 # This file
+├── IPHONE_GUIDE.md                    # Complete iPhone setup 📱
+├── IPHONE_QUICKSTART.md               # Quick iPhone guide 📱
 ├── requirements.txt                   # Dependencies (none!)
 ├── .gitignore                         # Git ignore file
 ├── index.html                         # Web documentation
 │
 ├── cyber_learning_assistant.py        # Basic assistant (for beginners)
 ├── interactive_assistant.py           # Interactive CLI (easy to use)
+├── mobile_assistant.py                # iPhone/iOS optimized 📱
 ├── professional_assistant.py          # Professional assistant (advanced)
 │
 └── plugins/                           # Extension plugins

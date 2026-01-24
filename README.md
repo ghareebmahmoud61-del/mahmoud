@@ -69,6 +69,12 @@ cd mahmoud
 python3 interactive_assistant.py
 ```
 
+#### Mobile/iPhone Mode 📱
+```bash
+python3 mobile_assistant.py
+```
+*Optimized for iPhone with Pythonista/Pyto - see [IPHONE_GUIDE.md](IPHONE_GUIDE.md)*
+
 #### Direct Usage
 ```bash
 python3 cyber_learning_assistant.py
@@ -233,7 +239,17 @@ See `EXTENDING.md` for complete guide on adding your own content!
 
 - Python 3.6 or higher
 - No external dependencies required!
-- Works on Windows, Mac, Linux
+- Works on Windows, Mac, Linux, **and iPhone/iOS!** 📱
+
+### Running on iPhone / iOS
+Yes, you can run this on your iPhone! See **[IPHONE_GUIDE.md](IPHONE_GUIDE.md)** for complete instructions.
+
+**Quick Start for iPhone:**
+1. Install **Pythonista** or **Pyto** from App Store
+2. Import `interactive_assistant.py`
+3. Run and start learning on your iPhone! 📱
+
+[📱 Complete iPhone Setup Guide →](IPHONE_GUIDE.md)
 
 ## License / רישיון
 
