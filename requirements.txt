@@ -1,0 +1,2 @@
+# Professional Agent System - No external dependencies required
+# This package uses only Python standard library
