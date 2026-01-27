@@ -46,4 +46,4 @@ Contributions are welcome! If you'd like to contribute:
 
 ## License
 
-This project is open source and available for use and modification.
+This project is open source. Please check with the repository owner for specific license terms before using or modifying the code.
