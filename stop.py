@@ -1,16 +1,20 @@
 """
 Simple stop function implementation.
 """
+import sys
 
 
-def stop():
+def stop(exit_code=0):
     """
-    Stop function that terminates execution.
+    Stop function that terminates program execution.
     
-    This function can be used to gracefully stop a process or operation.
+    Args:
+        exit_code (int): The exit code to return (default: 0)
+    
+    This function gracefully stops the program by calling sys.exit().
     """
     print("Stopping...")
-    return True
+    sys.exit(exit_code)
 
 
 if __name__ == "__main__":
