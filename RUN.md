@@ -69,7 +69,7 @@ You can test your custom agent locally using the Copilot CLI:
    gh copilot --agent my-agent "Your test query here"
    ```
 
-For more details on local testing, visit: https://gh.io/customagents/cli
+For more details on local testing, visit the GitHub Copilot documentation: https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line
 
 ## Configuration Details
 
@@ -126,9 +126,9 @@ Once deployed, you can use your custom agent in:
 
 ## Additional Resources
 
-- [Custom Agents Configuration Format](https://gh.io/customagents/config)
-- [Copilot CLI Documentation](https://gh.io/customagents/cli)
-- [GitHub Copilot Documentation](https://docs.github.com/copilot)
+- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+- [Using GitHub Copilot in the Command Line](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line)
+- [GitHub Copilot Features](https://docs.github.com/en/copilot/using-github-copilot)
 
 ## Next Steps
 

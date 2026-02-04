@@ -23,6 +23,5 @@ For detailed instructions, see [RUN.md](RUN.md).
 
 ## Resources
 
-- [Custom Agents Configuration](https://gh.io/customagents/config)
-- [Copilot CLI for Testing](https://gh.io/customagents/cli)
-- [GitHub Copilot Documentation](https://docs.github.com/copilot)
+- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+- [Using GitHub Copilot in the Command Line](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line)
