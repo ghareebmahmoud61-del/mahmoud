@@ -28,3 +28,15 @@ You can also run the Docker container manually with:
 ```bash
 docker run sha256:28c86dc782966929b09e951f0580826027c0b80e9ba38868e1fc6811dfb8bade
 ```
+
+### Note
+
+If you need to run an image from a specific repository using this digest, use the format:
+```bash
+docker run <repository>@sha256:28c86dc782966929b09e951f0580826027c0b80e9ba38868e1fc6811dfb8bade
+```
+
+For example:
+```bash
+docker run ubuntu@sha256:28c86dc782966929b09e951f0580826027c0b80e9ba38868e1fc6811dfb8bade
+```
